@@ -3,6 +3,7 @@ import CalcLogic from './CalcLogic';
 import CalcScreen from './CalcScreen';
 import CalcBtnsPad from './CalcBtnsPad';
 import CalcBtn from './CalcBtn';
+import CalcProvider from '../context/CalcContext';
 /* eslint-disable react/no-array-index-key */
 class Calculator extends React.Component {
   constructor(props) {
@@ -18,14 +19,16 @@ class Calculator extends React.Component {
 
   render() {
     return (
-      <CalcLogic>
-        <CalcScreen value="0" />
-        <CalcBtnsPad>
-          {this.btnValues.flat().map((row, index) => (
-            <CalcBtn key={index} value={row} />
-          ))}
-        </CalcBtnsPad>
-      </CalcLogic>
+      <CalcProvider>
+        <CalcLogic>
+          <CalcScreen value="0" />
+          <CalcBtnsPad>
+            {this.btnValues.flat().map((row, index) => (
+              <CalcBtn key={index} value={row} />
+            ))}
+          </CalcBtnsPad>
+        </CalcLogic>
+      </CalcProvider>
     );
   }
 }

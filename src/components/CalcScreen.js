@@ -1,19 +1,22 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { Textfit } from 'react-textfit';
+import { CalcContext } from '../context/CalcContext';
 
 class CalcScreen extends React.PureComponent {
   render() {
-    const { value } = this.props;
+    const { calc } = this.context;
     return (
-      <div className="calcScreen">
-        {value}
-      </div>
+      <Textfit className="calcScreen" max={50} mode="single">
+        {calc.total}
+        {' '}
+        {calc.operation}
+        {' '}
+        {calc.next}
+      </Textfit>
     );
   }
 }
 
-CalcScreen.propTypes = {
-  value: PropTypes.string.isRequired,
-};
+CalcScreen.contextType = CalcContext;
 
 export default CalcScreen;

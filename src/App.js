@@ -10,7 +10,7 @@ function App() {
   return (
     <Router>
       <div className={styles.logic}>
-        <Navbar />
+        <Navbar data-testid="navbar" />
         <div className={styles.content}>
           <Routes>
             <Route exact path="/" element={<Home />} />

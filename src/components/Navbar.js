@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import styles from './Navbar.module.css';
 
 const Navbar = () => (
-  <nav className={styles.navbar}>
+  <nav className={styles.navbar} data-testid="navbar">
     <h1 className={styles.title}>Math Magician</h1>
     <div className="links">
       <Link to="/">Home</Link>

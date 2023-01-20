@@ -16,6 +16,7 @@ const Calculator = () => {
 
   return (
     <CalcProvider>
+      <Calculator data-testid="calculator" />
       <CalcLogic>
         <CalcScreen value="0" />
         <CalcBtnsPad>

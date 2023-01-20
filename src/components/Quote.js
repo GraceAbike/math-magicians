@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './Quote.module.css';
 
 const Quote = () => (
-  <div className={styles.quote}>
+  <div className={styles.quote} data-testid="quote">
     <h2 className={styles.subtitle}>
       <strong>&ldquo; </strong>
       Mathematics is not about numbers, equations, computations,

@@ -1,0 +1,34 @@
+exports[`renders correctly 1`] = `
+<nav
+  className="navbar"
+  data-testid="navbar"
+>
+  <h1
+    className="title"
+  >
+    Math Magician
+  </h1>
+  <div
+    className="links"
+  >
+    <a
+      href="/"
+      onClick={[Function]}
+    >
+      Home
+    </a>
+    <a
+      href="/calculator"
+      onClick={[Function]}
+    >
+      Calculator
+    </a>
+    <a
+      href="/quote"
+      onClick={[Function]}
+    >
+      Quote
+    </a>
+  </div>
+</nav>
+`;

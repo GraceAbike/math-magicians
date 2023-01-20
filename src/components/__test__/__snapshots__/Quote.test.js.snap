@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Check any changes to the component 1`] = `
+<div
+  className="quote"
+>
+  <h2
+    className="subtitle"
+  >
+    <strong>
+      “ 
+    </strong>
+    Mathematics is not about numbers, equations, computations, or algorithms: it is about understanding.
+    <strong>
+       „
+    </strong>
+  </h2>
+  <span
+    className="author"
+  >
+    Author: William Paul Thurston
+  </span>
+</div>
+`;
+
+exports[`renders correctly 1`] = `
+<div
+  className="quote"
+  data-testid="quote"
+>
+  <h2
+    className="subtitle"
+  >
+    <strong>
+      “ 
+    </strong>
+    Mathematics is not about numbers, equations, computations, or algorithms: it is about understanding.
+    <strong>
+       „
+    </strong>
+  </h2>
+  <span
+    className="author"
+  >
+    Author: William Paul Thurston
+  </span>
+</div>
+`;
